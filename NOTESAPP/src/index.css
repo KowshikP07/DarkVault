@@ -50,17 +50,18 @@ body{
 }
 .cardtop{
     height: 50%;
-    background-color: black;
+    background-color: #10E7FF;
     width: 100%;
     clip-path: polygon(0% 0%,100% 0%,100% 85%,85% 85%,78% 100%,20% 100%,15% 85%,0% 85%);
     transition: height 2s linear;
     z-index: 1;
+    color: white;
 }
 .cardbottom{
     /* height: 20%; */
     height: 50%;
     width: 100%;
-    background-color: black;
+    background-color: #11142D;
     clip-path: polygon(0% 0%,15% 0%,20% 20%,80% 20%,85% 0%,100% 0%,100% 100%,0% 100%);
     display: flex;
     align-items: center;
@@ -92,10 +93,11 @@ body{
     top:40%;
     height: 250px;
     width: 85%;
-    background-color: antiquewhite;
+    background-color: #F5F2FF;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border: 5px solid black;
+    transition: transform 0.5s;
 }
 .notescontent:nth-child(4){
     border: 5px solid black;
@@ -114,4 +116,8 @@ body{
     top:25%;
     background-color: aquamarine;
     transform: rotate(5deg);
+}
+.notescontent:hover{
+    transform: translateY(-25px);
+    cursor: pointer;
 }

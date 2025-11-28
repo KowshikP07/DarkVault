@@ -5,7 +5,7 @@ const Sidebar = () => {
         <div className={side.sidebar}>
             <div className={side.logo}>logo</div>
             <div className={side.sidele}><button className={side.home}>🏠</button>
-            <button className={side.home}>📁</button></div>
+            <button className={side.home}>📁</button><button className={side.note}>🗒️</button></div>
         </div>
     )
 }
