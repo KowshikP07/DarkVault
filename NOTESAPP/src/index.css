@@ -22,12 +22,26 @@ body{
     background-color: white;
     height: 90vh;
     width: calc(100vw - 6vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.notesfolder{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.content1{
+    background-color: green;
+    height: auto;
+    width: calc(100vw - 6vw);
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
     column-gap: 15px;
     row-gap: 10px;
     justify-items: center;
-    overflow-y: auto;
     justify-content: center;
 }
 .navbar{
@@ -120,4 +134,12 @@ body{
 .notescontent:hover{
     transform: translateY(-25px);
     cursor: pointer;
+}
+.cardbtn:hover{
+    cursor: pointer;
+}
+.creatingfolder{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
 }

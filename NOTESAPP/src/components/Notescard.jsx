@@ -19,6 +19,9 @@ const Notescard = () => {
     }
   return (
       <div className="content">
+        <div className="notesfolder"><div className="creatingfolder"></div>
+        <div className="creatingnotes"></div></div>
+        <div className="content1"></div>
         {folder}
       </div>
   )
