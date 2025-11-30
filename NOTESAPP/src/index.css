@@ -19,7 +19,7 @@ body{
 }
 .content{
     grid-area: content;
-    background-color: white;
+    background-color: violet;
     height: 90vh;
     width: calc(100vw - 6vw);
     display: flex;
@@ -28,14 +28,33 @@ body{
     flex-direction: column;
     overflow-y: auto;
 }
+.notesfoldernone{
+    display: none;
+}
 .notesfolder{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* display: none; */
+}
+.creatingfolder{
+    height: 100vh;
+    width: 50%;
+    background-color: #10E7FF;
+    border: 1px solid black;
+}
+.creatingfiles{
+    height: 100vh;
+    width: 50%;
+    background-color: beige;
+    border: 1px solid black;
 }
 .content1{
     background-color: green;
-    height: auto;
+    height: 100%;
     width: calc(100vw - 6vw);
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
@@ -70,6 +89,13 @@ body{
     transition: height 2s linear;
     z-index: 1;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardtoph1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }
 .cardbottom{
     /* height: 20%; */
@@ -137,9 +163,4 @@ body{
 }
 .cardbtn:hover{
     cursor: pointer;
-}
-.creatingfolder{
-    height: 100%;
-    width: 100%;
-    /* background-color: red; */
 }
