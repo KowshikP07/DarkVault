@@ -4,13 +4,13 @@
     padding: 0;
 }
 body{
-    background-color: white;
+    background-color: #CC0000;
 }
 .main{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 6vw 1fr;
+    grid-template-columns: 8vw 1fr;
     grid-template-rows: 10vh 1fr;
     grid-template-areas: "sidebar navbar" "sidebar content";
 }
@@ -19,9 +19,9 @@ body{
 }
 .content{
     grid-area: content;
-    background-color: violet;
-    min-height: 100vh;
-    width: calc(100vw - 6vw);
+    /* background-color: violet; */
+    min-height: 90vh;
+    width: calc(100vw - 8vw);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,31 +35,42 @@ body{
 }
 .notesfolder{
     height: 350px;
-    background-color: red;
+    background-color: #CC0000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .creatingfolder{
-    height: 100vh;
+    height: 100%;
     width: 50%;
-    background-color: #10E7FF;
-    border: 1px solid black;
+    background-color: #CC0000;
+    border: 5px solid #FFAA00;
+    border-top-color:#FFAA00 ;
+    border-top-width: 5px;
+    border-top-style:solid ;
+    position: relative;
+    left:50px;
 }
 .creatingfiles{
     height: 100%;
     width: 50%;
-    background-color: beige;
-    border: 1px solid black;
+    background-color: #CC0000;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    border: 5px solid #FFE000;
+    border-top-color:#FFE000 ;
+    border-top-width: 5px;
+    border-top-style:solid ;
+    position: relative;
+    left:5%;
+    top:3%;
 }
 .content1{
-    background-color: green;
-    /* height: 100%; */
-    width: calc(100vw - 6vw);
+    width: calc(100vw - 8vw);
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
     column-gap: 15px;
@@ -69,25 +80,33 @@ body{
 }
 .navbar{
     grid-area: navbar;
-    height: 150px;
-    width: calc(100vw - 6vw);
-    background-color: black;
+    height: 75px;
+    width: calc(100vw - 8vw);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navmain{
+    width: calc(100vw - 10vw);
+    height: 65px;
+    border: 5px solid #FFE000;
 }
 .card{
     height: 580px;
     width: 425px;
-    margin-top: 32px;
-    border: 4px solid black;
+    border: 4px solid #FFE000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     transition: height 2s linear;
     position: relative;
+    top:5%;
 }
 .cardtop{
     height: 50%;
-    background-color: #10E7FF;
+    background-color: #FFAA00;
     width: 100%;
     clip-path: polygon(0% 0%,100% 0%,100% 85%,85% 85%,78% 100%,20% 100%,15% 85%,0% 85%);
     transition: height 2s linear;
@@ -102,7 +121,6 @@ body{
     font-size: 2.5rem;
 }
 .cardbottom{
-    /* height: 20%; */
     height: 50%;
     width: 100%;
     background-color: #11142D;
