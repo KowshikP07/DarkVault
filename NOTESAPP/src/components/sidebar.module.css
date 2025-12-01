@@ -5,13 +5,13 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: #CC0000;
-    border-right: 5px solid #FFE000;
+    background-color: black;
+    /* border-right: 5px solid #FFE000; */
 }
 .logo{
     height: 74px;
     width: 100%;
-    background-color: #FFE000;
+    /* background-color: #FFE000; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,16 +29,34 @@
 .home{
     height: 70px;
     width: 100%;
-    /* background-color: black; */
     background-color: transparent;
     border: none;
     font-size: 3rem;
+    position: relative;
+    /* background-color: #FFE000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 1px white;
+    /* border: 2px solid #FFE000; */
+    /* background-color: #CC0000; */
+    background-color: #FFAA00;
+    transition: all 0.7s;
 }
 .note{
     height: 70px;
     width: 100%;
-    /* background-color: black; */
     background-color: transparent;
     border: none;
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 1px white;
+    /* border: 2px solid #FFE000; */
+    background-color: #FFAA00;
+    transition: all 0.7s;
+}
+.home:hover,.note:hover{
+    box-shadow: 6px 6px 1px white;
 }
