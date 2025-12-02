@@ -48,8 +48,8 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    border-top-width: 5px;
-    border-top-style:solid ;
+    /* border-top-width: 5px; */
+    /* border-top-style:solid ; */
     position: relative;
     left:5%;
     top:3%;
@@ -57,13 +57,13 @@ body{
 .creatingfiles{
     height: 100%;
     width: 50%;
-    background-color: #CC0000;
+    /* background-color: #CC0000; */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    border-top-width: 5px;
-    border-top-style:solid ;
+    /* border-top-width: 5px; */
+    /* border-top-style:solid ; */
     position: relative;
     left:5%;
     top:3%;
@@ -203,6 +203,24 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+.notetop1{
+    height: 75px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CC0000;
+}
+.folderform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    width: 475px;
+    background-color: #CC0000;
+    /* padding: 0px 150px; */
 }
 .notestcontentuser{
     background-color: beige;
