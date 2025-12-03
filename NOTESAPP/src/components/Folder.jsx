@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Folder = () => {
+const Folder = ({onaddfolder}) => {
   const [folder,setfolder]=useState({"category":""});
   function handlechange(e){
     const {name,value}=e.target;
@@ -12,6 +12,7 @@ const Folder = () => {
   function handlesubmit(e){
     e.preventDefault();
     console.log("form submited")
+    onaddfolder(folder);
     setfolder(prev=>({...prev,category:""}))
   }
   return (

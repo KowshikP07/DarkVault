@@ -7,6 +7,7 @@ const Home = () => {
       const [category,setfolder]=useState(false);
       const [file,setfile]=useState(false);
       // const [defaulting,setdefault]=useState(false);
+      
   return (
     <div className='main'>
       <Sidebar file={file} setfile={setfile} category={category} setfolder={setfolder} />

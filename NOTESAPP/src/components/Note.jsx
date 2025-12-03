@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-const Note = () => {
+const Note = ({onaddNote}) => {
   const [usercontent,setcontent]=useState({"title":"","text":""})
 
   function handlechange(e){
@@ -12,6 +12,7 @@ const Note = () => {
   function handlesubmit(e){
     e.preventDefault();
     console.log(usercontent.title+" "+usercontent.text);
+    onaddNote(usercontent);
     setcontent({title:"",text:""});
   }
   return (
