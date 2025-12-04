@@ -13,15 +13,18 @@ const Notescard = ({file,category}) => {
     key={no.index}
     ke={no.index}
     topic={no.topic}
-    notes={notesContent.filter(note => note.topic === no.topic)}
+    notes={notesContent.filter(note => (note.topic === no.topic))}
   />
 ));
     const handleingthenotes=(newnotetobeadded)=>{
-        setnotesContent(prev=>[...prev,newnotetobeadded])
+        setnotesContent(prev=>([...prev,newnotetobeadded]))
         console.log(notesContent);
     }
+    let ind=3;
     const addinguptheFolder=(addnewfolder)=>{
-        setnewfolder(prev=>[...prev,addnewfolder])
+      ind++;
+      let obj={index:ind,topic:addnewfolder.category}
+        setnotes(prev=>[...prev,obj])
         console.log(newfolder);
     }
   return (

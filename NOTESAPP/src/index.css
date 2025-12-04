@@ -172,13 +172,13 @@ body{
 .notescontent:nth-child(3){
     border: 5px solid black;
     top:30%;
-    background-color: gray;
+    background-color: goldenrod;
     transform: rotate(10deg);
 }
 .notescontent:nth-child(2){
     border: 5px solid black;
     top:25%;
-    background-color: aquamarine;
+    background-color: skyblue;
     transform: rotate(5deg);
 }
 .notescontent:hover{
@@ -293,4 +293,11 @@ form{
     font-size: 25px;
     color: white;
     text-align: justify;
+}
+.showing{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background-color: #F5F2FF;
+    z-index: 1;
 }
