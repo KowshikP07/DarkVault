@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-const Card = ({ ke, topic, notes }) => {
+const Card = ({ ke, topic, notes,setdisplay }) => {
     const [activecont, setactive] = useState(null);
-    const [displaynotes, setdisplay] = useState(null);
 
-    const handleclick = (ke) => {
+    const handleclick = (ke) => {   
         setactive(ke === activecont ? null : ke)
     };
-    const handleshow = (i) => {
-        setdisplay(i === displaynotes ? null : key)
+    const handleshow=(realIndex)=>{
+        setdisplay({topic:topic, ind:realIndex})
+        console.log(realIndex)
     }
     return (
         <div className={`card ${activecont === ke ? 'active' : ''}`} key={ke}>
@@ -18,7 +18,7 @@ const Card = ({ ke, topic, notes }) => {
             </div>
             {
                 notes.map((n, i) => (
-                    <div className="notescontent" key={i} onClick={()=>handleshow(i)}>
+                    <div className="notescontent" key={i} onClick={()=>handleshow(n.realIndex)}>
                         <p className='notestext'>{n.text}</p>
                     </div>
                 ))
@@ -27,9 +27,7 @@ const Card = ({ ke, topic, notes }) => {
                 <button className="cardbtn" onClick={() => handleclick(ke)}>
                     Tap to unlock
                 </button>
-            </div>
-            {displaynotes !== null && ( <div className="showing"> <div className="showbox"> <p>{notes[displaynotes].text}</p> <button className="closebtn" onClick={() => setdisplay(null)}>X</button> </div> </div> )}
-        </div>
+            </div></div>
     );
 };
 

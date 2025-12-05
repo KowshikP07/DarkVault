@@ -301,3 +301,29 @@ form{
     background-color: #F5F2FF;
     z-index: 1;
 }
+.showingactive{
+    display: none;
+}
+.hero{
+    height: 450px;
+    width: 500px;
+    background-color: #F5F2FF;
+    position: absolute;
+    top:25%;
+    left: 38%;
+    z-index: 1;
+    /* transform: translate(-50%,-50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFAA00;
+    border: 8px dashed #CC0000;
+}
+.hero p{
+    padding: 10px;
+    font-size: 30px;
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 900;
+
+}
