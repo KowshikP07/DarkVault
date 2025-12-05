@@ -318,12 +318,29 @@ form{
     justify-content: center;
     background-color: #FFAA00;
     border: 8px dashed #CC0000;
+    flex-direction: column;
 }
 .hero p{
-    padding: 10px;
+    padding: 50px;
     font-size: 30px;
-    text-align: justify;
     text-transform: uppercase;
     font-weight: 900;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.crossing{
+    padding: 5px;
+    font-size: 20px;
+    position: absolute;
+    top:5%;
+    background-color: #CC0000;
+    right: 5%;
+    border: 1px solid black;
+}
 
+.crossing:hover{
+    cursor: pointer;
 }
