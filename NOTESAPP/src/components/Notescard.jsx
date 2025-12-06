@@ -26,14 +26,14 @@ const Notescard = ({ file, category }) => {
   ));
   const handleingthenotes = (newnotetobeadded) => {
     setnotesContent(prev => ([...prev, newnotetobeadded]))
-    console.log(notesContent);
+    console.log(notesContent[2].text);
   }
   let ind = 3;
   const addinguptheFolder = (addnewfolder) => {
     ind++;
     let obj = { index: ind, topic: addnewfolder.category }
     setnotes(prev => [...prev, obj])
-    console.log(newfolder);
+    console.log(notesfolder);
   }
  const handleclose = () => {
     setdisplay(null); // hide displayed note
