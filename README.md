@@ -5,7 +5,7 @@ A clean and functional Notes App built using **React**, allowing users to manual
 ---
 
 <p align="center">
-  <img src="./assets/home.png" alt="Notes App Screenshot" width="700"/>
+  <img src="NOTESAPP\src\assets\home.png" alt="Notes App Screenshot" width="700"/>
 </p>
 
 > 🔁 Replace `./assets/notes-app-preview.png` with your actual screenshot path.
